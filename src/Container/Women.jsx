@@ -1,18 +1,17 @@
 import React from "react"
-import { NavLink, Link } from "react-router-dom"
 import FemLegs from "../components/WomenComp/FemLegs"
 import Abs from "../components/WomenComp/Abs"
 import Joggings from "../components/WomenComp/Joggings"
-import Powerlift from "../components/WomenComp/Powerlift"
+import Power from "../components/WomenComp/Power"
 import Top from "../components/WomenComp/Top"
-import FreeWeights from "../components/WomenComp/FreeWeights"
+import FreeWeights from "../components/WomenComp/Weights"
 import { getWorkouts } from "../api"
-import abs from '../WomenImg/abs'
-import FreeWeights from '../WomenImg/FreeWeights'
-import jogging from '../WomenImg/jogging'
-import legsFemme from '../WomenImg/legsFemme'
-import Powerlift from '../WomenImg/Powerlift'
-import top from '../WomenImg/top'
+import abs from '../WomenImg/abs.png'
+import freeWeights from '../WomenImg/freeWeights.png'
+import jogging from '../WomenImg/jogging.png'
+import legsFemme from '../WomenImg/legsFemme.png'
+import powerlift from '../WomenImg/powerLift.png'
+import top from '../WomenImg/top.png'
 
 class Women extends React.Component{
     constructor(){
@@ -28,7 +27,7 @@ class Women extends React.Component{
 
 
             this.setState({
-                womenWorkouts:[...this.state.womenWorkouts, workouts.data]
+                womenWorkouts:[...this.state.womenWorkouts, femWorkout.data]
             })
     }
 
@@ -43,22 +42,22 @@ class Women extends React.Component{
                     <div className="women-icons">
                     
                     <div className="Wom-row-1">
-                            <a href={workout[0].imageUrl} target="_blank"><img className="page-icons" src={gynecomastia} alt="" /></a>
+                            <a href={workout[6].imageUrl} target="_blank"><img className="page-icons" src={abs} alt="" /></a>
 
-                            <a href={workout[1].imageUrl} target="_blank"><img className="page-icons" src={fit} alt="" /></a>
+                            <a href={workout[8].imageUrl} target="_blank"><img className="page-icons" src={top} alt="" /></a>
                         </div>
 
                         <div className="2">
-                            <a href={workout[3].imageUrl} target="_blank"><img className="page-icons" src={back} alt="" /></a>
+                            <a href={workout[7].imageUrl} target="_blank"><img className="page-icons" src={legsFemme} alt="" /></a>
 
-                            <a href={workout[4].imageUrl} target="_blank"><img className="page-icons" src={dumbbell} alt="" /></a>
+                            <a href={workout[9].imageUrl} target="_blank"><img className="page-icons" src={freeWeights} alt="" /></a>
                         </div>
 
 
                         <div className="row-3">
-                            <a href={workout[2].imageUrl} target="_blank"><img className="page-icons" src={muscles} alt="" /></a>
+                            <a href={workout[10].imageUrl} target="_blank"><img className="page-icons" src={powerlift} alt="" /></a>
 
-                            <a href={workout[5].imageUrl} target="_blank"><img className="page-icons" src={sport} alt="" /></a>
+                            <a href={workout[11].imageUrl} target="_blank"><img className="page-icons" src={jogging} alt="" /></a>
                         </div>
 
                     </div>

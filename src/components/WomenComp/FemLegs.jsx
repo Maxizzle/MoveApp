@@ -1,11 +1,12 @@
 import React from 'react'
-import FemLegs from "./WomenImg/legs"
+import {NavLink} from 'react-router-dom'
+import legsFemme from '../../WomenImg/legsFemme.png'
 
 function FemLegs() {
     return(
         <div>
              <NavLink exact to="/" active className="active">
-              <img src={legs} className="legs-icon"/>
+              <img src={legsFemme} className="legs-icon"/>
               </NavLink> 
         </div>
     )

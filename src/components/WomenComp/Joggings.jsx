@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import jogging from "../../WomenImg/jogging"
+import jogging from "../../WomenImg/jogging.png"
 
 function Joggings() {
     return(

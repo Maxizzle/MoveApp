@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import abs from "../../WomenImg/abs"
+import abs from "../../WomenImg/abs.png"
 
 function Abs() {
     return(

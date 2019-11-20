@@ -61,9 +61,13 @@ class Info extends React.Component {
                     {/* <input type="submit" value="Next" /> */}  
                 </form>
                 <div className >
-                      <NavLink exact to="/Men" active className="active">
+                {this.props.location.state.gender === 'male' ? <NavLink exact to="/Men" active className="active">
                         Next
-                </NavLink>
+                </NavLink> : <NavLink exact to="/Women" active className="active">
+                        Next
+                </NavLink>}
+
+                      
                 </div>
 
             </div>

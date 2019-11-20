@@ -8,6 +8,7 @@ import Axios from "axios"
 import Info from "./Info/Info"
 import Nutrients from './components/Nutrition/Nutrients';
 import Men from './Container/Men';
+import Women from './Container/Women'
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Route exact path="/Info" component={Info} />
         <Route exact path="/Nutrients" component={Nutrients} />
         <Route exact path="/Men" component={Men} />
+        <Route exact path="/Women" component={Women} />
+
 
 
       </Switch>

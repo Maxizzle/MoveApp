@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import freeWeights from "../../WomenImg/freeWeights"
+import freeWeights from "../../WomenImg/freeWeights.png"
 
-function Abs() {
+function Weights() {
     return(
         <NavLink exact to="/" active className="active">
         <img src={freeWeights} className="free-icon"/>
@@ -10,4 +10,4 @@ function Abs() {
     )
 }
 
-export default FreeWeights
+export default Weights
