@@ -34,6 +34,10 @@
   text-decoration: none;
 }
 
+h2{
+  color: white;
+}
+
 h3{
   font-size: 25px;
   border: 1px solid yellow;
@@ -62,7 +66,6 @@ button {
   justify-content: space-evenly;
   margin-top: 30vh;
   margin-bottom: 41vh;
-  
 
 }
 
@@ -89,14 +92,30 @@ button {
 } */
 
 .info form{
-background-color: tomato;
+margin-top: 30vh;
+/* background-color: tomato; */
 display: flex;
 flex-direction: column;
 align-items: center;
-
 width: 100%;
 }
 
 .info input {
-  width: 60%;
+  width: 35vh;
+  height:5vh ;
+}
+
+.men-icons{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.page-icons{
+  background-color: white;
+  border-radius: 35px;
+  display: flex;
+  
+  height: 10vh;
 }

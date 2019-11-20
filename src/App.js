@@ -7,6 +7,7 @@ import Gender from "./Gender/Gender"
 import Axios from "axios"
 import Info from "./Info/Info"
 import Nutrients from './components/Nutrition/Nutrients';
+import Men from './Container/Men';
 
 function App() {
   return (
@@ -14,14 +15,16 @@ function App() {
     <div className="App">
       
      <Nutrients />
-     
+
       <Switch>
 
         <Route exact path="/" component={Home} />
-        <Route extac path="/Gender" component={Gender} />
+        <Route exact path="/Gender" component={Gender} />
         <Route exact path="/Quote" component={Quote} />
         <Route exact path="/Info" component={Info} />
         <Route exact path="/Nutrients" component={Nutrients} />
+        <Route exact path="/Men" component={Men} />
+
 
       </Switch>
     </div>

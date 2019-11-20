@@ -1,10 +1,15 @@
 import React from "react"
 import Axios from "axios"
+import sport from "../Images/sport.png"
+import athlete from "../Images/athlete.png"
+import {NavLink} from "react-router-dom"
+import Men from "../Container/Men"
+
 
 class Info extends React.Component {
     f
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = {
             name: "",
             age: "",
@@ -40,17 +45,29 @@ class Info extends React.Component {
 
 
     render() {
-        console.log(this.state)
+        console.log(this.props)
+        let icon = this.props.location.state.gender === 'male' ? <img src={sport} className="male-icon"/> : <img src={athlete} className="female-icon"/>
+
+        // let femIcon = this.props.location.state.gender === 'female' ? <img src={athlete} className="female-icon"/> : null
         return (
+           
             <div className="info">
+                {icon}
+             
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" value={this.state.value} onChange={this.handleChange} name="name" />
                     <input type="text" value={this.state.value} onChange={this.handleChange} name="age" />
                     <input type="text" value={this.state.value} onChange={this.handleChange} name="weight" />
-                    <input type="submit" value="Submit" />
+                    {/* <input type="submit" value="Next" /> */}  
                 </form>
+                <div className >
+                      <NavLink exact to="/Men" active className="active">
+                        Next
+                </NavLink>
+                </div>
 
             </div>
+         
         )
     }
 
