@@ -54,18 +54,32 @@ class Info extends React.Component {
             <div className="info">
                 {icon}
              
+             <div className="field">
                 <form onSubmit={this.handleSubmit}>
-                    <input type="text" value={this.state.value} onChange={this.handleChange} name="name" />
-                    <input type="text" value={this.state.value} onChange={this.handleChange} name="age" />
-                    <input type="text" value={this.state.value} onChange={this.handleChange} name="weight" />
-                    {/* <input type="submit" value="Next" /> */}  
+                   
+                    <input type="text" id="name" value={this.state.value} onChange={this.handleChange} name="name" placeholder="Name"  />
+                
+                    
+                    
+                    <input type="text" id="age" value={this.state.value} onChange={this.handleChange} name="age"
+                    placeholder="Age" />
+                    <input type="text" id="weight" value={this.state.value} onChange={this.handleChange} name="weight"
+                    placeholder="Weight" /> 
+                  
                 </form>
-                <div className >
-                {this.props.location.state.gender === 'male' ? <NavLink exact to="/Men" active className="active">
+                </div>
+                <div className="switch">
+                {this.props.location.state.gender === 'male' ? <NavLink exact to="/Men" active className="next-info">
                         Next
-                </NavLink> : <NavLink exact to="/Women" active className="active">
+                </NavLink> : <NavLink exact to="/Women" active       className="next-info">
                         Next
                 </NavLink>}
+                
+                <div className="back">
+                <NavLink exact to="/Gender" active className="back">
+                        Back
+                    </NavLink>
+                    </div>
 
                       
                 </div>

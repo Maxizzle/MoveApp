@@ -3,59 +3,25 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+ 
 }
 
-.signup {
-  border: 1px solid yellowgreen;
-  display: flex;
-  justify-content: center;
-  height: 8vh;
-  width: 45vh;
+.container{
+  position: relative;
+  width: 50%
+}
+
+.cover{
+  height: 100vh;
+  width: 100vh;
 
 }
 
-.quote{
-  display: flex;
-}
-
-.next{
-  border:1px solid wheat;
-  display: flex;
-  justify-content: flex-end;
-  
-}
-
-.back{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 10px;
-  background-color: #19B188;
-  text-decoration: none;
-}
-
-h2{
-  color: white;
-}
-
-h3{
-  font-size: 25px;
-  border: 1px solid yellow;
-  color: white;
-  margin-top: 40vh;
-  height: 30vh;
-}
-button {
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  border: 2px solid blue;
-  width: 40vh;
-}
+/*choose your icon*/
 
 .choose-gender{
   color: white;
-  border: 1px solid white;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
 
@@ -70,30 +36,138 @@ button {
 }
 
 .male-icon{
-  background-color: white;
+  background-color:#9BDBF7;
   border-radius: 35px;
   display: flex;
   height: 10vh;
 }
 
 .female-icon{
-  background-color: white;
+  background-color:#9BDBF7;
   border-radius: 35px;
   display: flex;
   height: 10vh;
 }
 
-/* .info{
-  background-color: black;
+.back{
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 20px 10px;
+  background-color: #19B188;
+  text-decoration: none;
+}
 
+.login{
+  text-shadow: 1px 1px gray;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: #2E8EFF;
+  text-align: center;
+  border: 1px solid white;
+  text-shadow: white;
+  border-radius: 10px;
+  padding: 10px 25px;
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  left:40%;
+}
+
+.field {
+  width: 100%;
+  height: 56px;
+  border-radius: 4px;
+  position: relative;
+  transition: 0.3s all;
+}
+
+
+.field input {
+  
+  text-align: center;
+  width: 100%;
+  height: 56px;
+  position: relative;
+  padding: 4px 16px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  /* background-color: transparent; */
+  color: #282828;
+  outline: none;
+  box-shadow: 0px 4px 20px 0px transparent;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out, 0.1s padding ease-in-out;
+  -webkit-appearance: none;
+} 
+
+#name{
+  border-bottom: 1px solid gray;
+  
+}
+
+#age{
+  border-bottom: 1px solid gray;
+  
+}
+
+
+
+/* 
+input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid red;
+  transform: translate(0, 16px) scale(1);
+  transition: all .1s ease-in-out;
 } */
+
+.next{
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  background-color:#1BB288 ;
+}
+
+
+
+
+/*QUOTE PAGE*/
+
+h2{
+  text-align: center;
+  color: white;
+
+}
+
+h3{
+  font-size: 25px;
+  /* border: 1px solid yellow; */
+  color: white;
+  margin-top: 40vh;
+  height: 30vh;
+}
+button {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  border: 2px solid blue;
+  width: 40vh;
+}
+
+
+
+/*INFO PAGE*/
 
 .info form{
 margin-top: 30vh;
-/* background-color: tomato; */
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -105,17 +179,62 @@ width: 100%;
   height:5vh ;
 }
 
+.next-info{
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  background-color:#1BB288;
+  padding: 4%;
+  margin-top:73%;
+}
+
+
+
+.page-icons{
+  background-color: #9BDBF7;
+  border-radius: 35px;
+  display: flex;
+  height: 10vh;
+}
+
+
 .men-icons{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin: auto;
+  /* border: 2px solid brown; */
+  margin: 20% 0;
 }
 
-.page-icons{
-  background-color: white;
-  border-radius: 35px;
+.women-icons{
   display: flex;
-  
-  height: 10vh;
+  flex-direction: column;
+  border: 2px solid brown;
+  margin: 20% 0;
+}
+
+.row-1{
+  display: flex;
+  justify-content: space-around;
+  margin: 10% 0;
+
+}
+
+
+.row-2{
+  display: flex;
+  justify-content: space-around;
+  margin: 10% 0;
+}
+
+
+.row-3{
+  display: flex;
+  justify-content: space-around;
+  margin: 10% 0;
+}
+
+.foot{
+  margin-top: 10%;
+  background-color:#1BB288;
 }

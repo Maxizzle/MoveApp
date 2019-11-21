@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 import FemLegs from "../components/WomenComp/FemLegs"
 import Abs from "../components/WomenComp/Abs"
 import Joggings from "../components/WomenComp/Joggings"
@@ -41,13 +42,13 @@ class Women extends React.Component{
                 {this.state.womenWorkouts.map(workout => (
                     <div className="women-icons">
                     
-                    <div className="Wom-row-1">
+                    <div className="row-1">
                             <a href={workout[6].imageUrl} target="_blank"><img className="page-icons" src={abs} alt="" /></a>
 
                             <a href={workout[8].imageUrl} target="_blank"><img className="page-icons" src={top} alt="" /></a>
                         </div>
 
-                        <div className="2">
+                        <div className="row-2">
                             <a href={workout[7].imageUrl} target="_blank"><img className="page-icons" src={legsFemme} alt="" /></a>
 
                             <a href={workout[9].imageUrl} target="_blank"><img className="page-icons" src={freeWeights} alt="" /></a>
@@ -59,8 +60,14 @@ class Women extends React.Component{
 
                             <a href={workout[11].imageUrl} target="_blank"><img className="page-icons" src={jogging} alt="" /></a>
                         </div>
+                        <div className="foot">
+                        <NavLink exact to="/Gender" active className="back">
+                            Back
+                        </NavLink>
+                            </div>
 
                     </div>
+                    
                 ))} 
             </div>
         )

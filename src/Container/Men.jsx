@@ -36,18 +36,19 @@ class Men extends React.Component {
     render() {
         return (
 
-            <div classname="Men-headline">
+            <div classname="men-headline">
                 <h2> What are we working out today?</h2>
                 {this.state.allWorkouts.map(workout => (
                     <div className="men-icons">
 
                         <div className="row-1">
-                            <a href={workout[0].imageUrl} target="_blank"><img className="page-icons" src={gynecomastia} alt="" /></a>
 
                             <a href={workout[1].imageUrl} target="_blank"><img className="page-icons" src={fit} alt="" /></a>
+
+                            <a href={workout[0].imageUrl} target="_blank"><img className="page-icons" src={gynecomastia} alt="" /></a>
                         </div>
 
-                        <div className="2">
+                        <div className="row-2">
                             <a href={workout[3].imageUrl} target="_blank"><img className="page-icons" src={back} alt="" /></a>
 
                             <a href={workout[4].imageUrl} target="_blank"><img className="page-icons" src={dumbbell} alt="" /></a>
@@ -59,12 +60,17 @@ class Men extends React.Component {
 
                             <a href={workout[5].imageUrl} target="_blank"><img className="page-icons" src={sport} alt="" /></a>
                         </div>
-
-                    </div>
-
+                        
+                        <div className="foot">
+                        <NavLink exact to="/Gender" active className="back">
+                            Back
+                        </NavLink>
+                            </div>
+                        
+                        </div> 
                 ))}
             </div>
-
+         
         )
 
     }

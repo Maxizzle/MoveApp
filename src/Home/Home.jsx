@@ -1,5 +1,6 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
+import appCover from "../Images/appCover.jpg"
 
 
 
@@ -14,11 +15,16 @@ class Home extends React.Component {
     }
     render() {
         return (
-            <div className="signup">
-                <div className="button">
-                    <NavLink exact to="/Quote" active className="active">
+
+            <div className="container">
+
+                <div className="cover">
+                    <img src={appCover} className="cover" />
+                    {/* <div className="button"> */}
+                    <NavLink exact to="/Quote" active className="login">
                         Sign Up
                 </NavLink>
+                    {/* </div> */}
                 </div>
 
             </div>

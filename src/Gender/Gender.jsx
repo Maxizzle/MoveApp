@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom"
 function Gender() {
     return (
         <div>
-            <h2 className="choose-gender">Choose your Gender</h2>
+            <h2 className="choose-gender">Choose your icon</h2>
             <div className="icons">
 
                 <NavLink className="active" to={{
@@ -27,11 +27,10 @@ function Gender() {
             </div>
 
             <div>
-
-                <           footer>
-                    <NavLink exact to="/Gender" active className="back">
+                <footer>
+                    <NavLink exact to="/Quote" active className="back">
                         Back
-            </NavLink>
+                    </NavLink>
                 </footer>
             </div>
 
