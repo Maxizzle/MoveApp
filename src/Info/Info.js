@@ -71,9 +71,9 @@ class Info extends React.Component {
                 </div>
                 <div className="footer">
                 
-                {this.props.location.state.gender === 'male' ? <NavLink exact to="/Men" active className="next">
+                {this.props.location.state.gender === 'male' ? <NavLink exact to="/Men" active className="next-info-men">
                         Next
-                </NavLink> : <NavLink exact to="/Women" active       className="next">
+                </NavLink> : <NavLink exact to="/Women" active       className="next-info-women">
                         Next
                 </NavLink>}
                 

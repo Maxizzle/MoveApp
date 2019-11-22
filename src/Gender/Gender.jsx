@@ -6,29 +6,31 @@ import { NavLink } from "react-router-dom"
 function Gender() {
     return (
         <div className="gender-page">
-            <h2 className="choose-gender">Choose Your Icon</h2>
-            <div className="icons">
+            <div className="choose-icon">
+                <h2 className="choose-gender">Choose Your Icon</h2>
 
-                <NavLink className="active" to={{
-                    pathname: '/Info',
-                    state: {
-                        gender: 'male'
-                    }
-                }}><img src={sport} className="male-icon" /></NavLink>
+                <div className="icons">
+
+                    <NavLink className="active" to={{
+                        pathname: '/Info',
+                        state: {
+                            gender: 'male'
+                        }
+                    }}><img src={sport} className="male-icon" /></NavLink>
 
 
-                <NavLink className="active" to={{
-                    pathname: "/Info",
-                    state: {
-                        gender: 'female'
-                    }
-                }}><img src={athlete} className="female-icon" /></NavLink>
+                    <NavLink className="active" to={{
+                        pathname: "/Info",
+                        state: {
+                            gender: 'female'
+                        }
+                    }}><img src={athlete} className="female-icon" /></NavLink>
 
+                </div>
             </div>
-
             <div>
                 <footer>
-                    <NavLink exact to="/Quote" active className="back">
+                    <NavLink exact to="/Quote" active className="back-gender">
                         Back
                     </NavLink>
                 </footer>
