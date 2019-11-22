@@ -8,6 +8,7 @@ function FemLegs() {
              <NavLink exact to="/" active className="active">
               <img src={legsFemme} className="legs-icon"/>
               </NavLink> 
+             
         </div>
     )
 }

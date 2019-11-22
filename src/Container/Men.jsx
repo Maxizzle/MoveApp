@@ -13,6 +13,8 @@ import back from '../Images/back.png'
 import dumbbell from "../Images/dumbbell (1).png"
 import fit from '../Images/fit.png'
 import sport from '../Images/sport.png'
+import Nutrients from '../components/Nutrition/Nutrients'
+
 
 class Men extends React.Component {
     constructor() {
@@ -37,28 +39,29 @@ class Men extends React.Component {
         return (
 
             <div classname="men-headline">
+                <Nutrients/>
                 <h2> What are we working out today?</h2>
                 {this.state.allWorkouts.map(workout => (
                     <div className="men-icons">
 
                         <div className="row-1">
 
-                            <a href={workout[1].imageUrl} target="_blank"><img className="page-icons" src={fit} alt="" /></a>
+                            <a href={workout[1].imageUrl} target="_blank"><img className="page-icons" src={fit} alt="" />Core</a>
 
-                            <a href={workout[0].imageUrl} target="_blank"><img className="page-icons" src={gynecomastia} alt="" /></a>
+                            <a href={workout[0].imageUrl} target="_blank"><img className="page-icons" src={gynecomastia} alt="" />Chest</a>
                         </div>
 
                         <div className="row-2">
-                            <a href={workout[3].imageUrl} target="_blank"><img className="page-icons" src={back} alt="" /></a>
+                            <a href={workout[3].imageUrl} target="_blank"><img className="page-icons" src={back} alt="" />Back</a>
 
-                            <a href={workout[4].imageUrl} target="_blank"><img className="page-icons" src={dumbbell} alt="" /></a>
+                            <a href={workout[4].imageUrl} target="_blank"><img className="page-icons" src={dumbbell} alt="" />Arms</a>
                         </div>
 
 
                         <div className="row-3">
-                            <a href={workout[2].imageUrl} target="_blank"><img className="page-icons" src={muscles} alt="" /></a>
+                            <a href={workout[2].imageUrl} target="_blank"><img className="page-icons" src={muscles} alt="" />Legs</a>
 
-                            <a href={workout[5].imageUrl} target="_blank"><img className="page-icons" src={sport} alt="" /></a>
+                            <a href={workout[5].imageUrl} target="_blank"><img className="page-icons" src={sport} alt="" />Cardio</a>
                         </div>
                         
                         <div className="foot">

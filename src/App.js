@@ -14,8 +14,7 @@ function App() {
   return (
 
     <div className="App">
-      
-     <Nutrients />
+    
 
       <Switch>
 
@@ -26,6 +25,8 @@ function App() {
         <Route exact path="/Nutrients" component={Nutrients} />
         <Route exact path="/Men" component={Men} />
         <Route exact path="/Women" component={Women} />
+        <Route exact path="/Nutrients" component={Nutrients} />
+
 
 
 

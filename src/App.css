@@ -3,8 +3,19 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
  
 }
+
+@keyframes moveDown{
+  0% { 
+    transform: translateY(-40px); 
+    opacity: 0;
+  }
+  100% { 
+    transform: translateY(0px);  
+    opacity: 1;
+  }}
 
 .container{
   position: relative;
@@ -13,7 +24,7 @@
 
 .cover{
   height: 100vh;
-  width: 100vh;
+  /* width: 100vh; */
 
 }
 
@@ -21,33 +32,24 @@
 
 .choose-gender{
   color: white;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
 
+
 }
+
 
 .icons{
   display: flex;
   justify-content: space-evenly;
   margin-top: 30vh;
   margin-bottom: 41vh;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
 
 }
 
-.male-icon{
-  background-color:#9BDBF7;
-  border-radius: 35px;
-  display: flex;
-  height: 10vh;
-}
 
-.female-icon{
-  background-color:#9BDBF7;
-  border-radius: 35px;
-  display: flex;
-  height: 10vh;
-}
 
 .back{
   color: white;
@@ -60,10 +62,10 @@
 
 .login{
   text-shadow: 1px 1px gray;
-  color: white;
+  color: black;
   font-weight: 500;
   text-decoration: none;
-  background-color: #2E8EFF;
+  background-color: #F9F871;
   text-align: center;
   border: 1px solid white;
   text-shadow: white;
@@ -75,17 +77,18 @@
   left:40%;
 }
 
-.field {
+ .field {
   width: 100%;
   height: 56px;
   border-radius: 4px;
   position: relative;
   transition: 0.3s all;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
 }
 
 
 .field input {
-  
+  -webkit-appearance: none;
   text-align: center;
   width: 100%;
   height: 56px;
@@ -97,13 +100,14 @@
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  /* background-color: transparent; */
   color: #282828;
   outline: none;
   box-shadow: 0px 4px 20px 0px transparent;
-  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out, 0.1s padding ease-in-out;
-  -webkit-appearance: none;
-} 
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out, 0.1s padding ease-in-out
+ 
+  
+}  
+
 
 #name{
   border-bottom: 1px solid gray;
@@ -114,18 +118,6 @@
   border-bottom: 1px solid gray;
   
 }
-
-
-
-/* 
-input {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  text-align: center;
-  border: 1px solid red;
-  transform: translate(0, 16px) scale(1);
-  transition: all .1s ease-in-out;
-} */
 
 .next{
   color: white;
@@ -153,6 +145,7 @@ h3{
   color: white;
   margin-top: 40vh;
   height: 30vh;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
 }
 button {
   font-weight: 600;
@@ -162,9 +155,40 @@ button {
   width: 40vh;
 }
 
+a{
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  margin-top: ;
+}
+
 
 
 /*INFO PAGE*/
+
+
+.info-icon {
+  margin-bottom: 10%;
+  
+}
+
+.info-icon img{
+  height: 12vh;
+}
+
+.male-icon{
+  background-color:#9BDBF7;
+  border-radius: 35px;
+  height: 10vh;
+  
+  
+}
+
+.female-icon{
+  background-color:#9BDBF7;
+  border-radius: 35px;
+  height: 10vh;
+}
 
 .info form{
 margin-top: 30vh;
@@ -189,13 +213,29 @@ width: 100%;
   margin-top:73%;
 }
 
+.back-info{
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  padding:5% 5%;
+  background-color:#1BB288;
+}
 
+/* workout page */
+
+.nutri .fruit input{
+ height: 25px;
+
+}
 
 .page-icons{
   background-color: #9BDBF7;
   border-radius: 35px;
   display: flex;
   height: 10vh;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
+  margin: auto;
 }
 
 
@@ -204,19 +244,22 @@ width: 100%;
   flex-direction: column;
   /* border: 2px solid brown; */
   margin: 20% 0;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
 }
 
 .women-icons{
   display: flex;
   flex-direction: column;
-  border: 2px solid brown;
+  /* border: 2px solid brown; */
   margin: 20% 0;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
 }
 
 .row-1{
   display: flex;
   justify-content: space-around;
   margin: 10% 0;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
 
 }
 
@@ -224,7 +267,8 @@ width: 100%;
 .row-2{
   display: flex;
   justify-content: space-around;
-  margin: 10% 0;
+  margin: 10% 0%;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
 }
 
 
@@ -232,9 +276,50 @@ width: 100%;
   display: flex;
   justify-content: space-around;
   margin: 10% 0;
+  animation: moveDown 0.6s ease-in-out 0.2s backwards;
 }
 
 .foot{
   margin-top: 10%;
   background-color:#1BB288;
+}
+
+
+.nutri{
+  display:flex;
+  justify-content: space-between;
+  background:#F9F871;
+  padding-right:3%;
+}
+
+.nutrients{
+  font-style:italic;
+  font-size:1em;
+
+}
+
+.nutrients h5{
+  margin:0;
+
+}
+
+@media (min-width: 740px) {
+  .App {
+    background-color: #2E8EFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    animation: moveDown 0.6s ease-in-out 0.2s backwards;
+   
+  }
+
+  .page-icons{
+    background-color: #9BDBF7;
+    border-radius: 35px;
+    display: flex;
+    height: 20vh;
+    animation: moveDown 0.6s ease-in-out 0.2s backwards;
+    margin: auto;
+  }
+
 }

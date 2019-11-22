@@ -1,5 +1,5 @@
 import React from "react"
-import { NavLink, Switch, Route } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 
 const Quote = () => {
@@ -14,9 +14,11 @@ const Quote = () => {
                                      “Socrates”</h3>
 
             </div>
+            <footer>
             <NavLink exact to="/Gender" active className="next">
                 Next
             </NavLink>
+            </footer>
         </>
 
     )
