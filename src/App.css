@@ -48,8 +48,10 @@ h1{
 }
 
 .title{
-  font-family: 'Darker Grotesque', sans-serif;
-  color: white;
+  
+  font-family: 'Lato', sans-serif;
+  color: Black;
+  font-size: 25px;
   background-color: #18bbde;
   display: flex;
   flex-direction: column;
