@@ -17,14 +17,16 @@ class Home extends React.Component {
         return (
 
             <div className="container">
-
+                
                 <div className="cover">
+                    <div className="title">
+                    <h1>Move</h1>
+                    </div>
                     <img src={appCover} className="cover" />
-                    {/* <div className="button"> */}
                     <NavLink exact to="/Quote" active className="login">
                         Sign Up
                 </NavLink>
-                    {/* </div> */}
+                
                 </div>
 
             </div>

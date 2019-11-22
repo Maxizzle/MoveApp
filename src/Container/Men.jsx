@@ -26,7 +26,7 @@ class Men extends React.Component {
     }
     async componentDidMount() {
         const workouts = await getWorkouts.catch(e => console.error(e))
-        console.log(workouts)
+       
 
         this.setState({
             allWorkouts: [...this.state.allWorkouts, workouts.data]

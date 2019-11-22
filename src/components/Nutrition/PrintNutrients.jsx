@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from "react-router-dom"
 
 export const PrintNutrients = (nutrients) => {
-    console.log(nutrients.calories)
+    
     return(
         <div>
              <NavLink exact to="/Gender" active className="next">

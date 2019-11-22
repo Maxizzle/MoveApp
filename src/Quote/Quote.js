@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 
 const Quote = () => {
     return (
-        <>
+        <div className="quote-page">
 
             <div className="quote">
                 <h3>“It is a shame for a man to grow
@@ -19,7 +19,7 @@ const Quote = () => {
                 Next
             </NavLink>
             </footer>
-        </>
+        </div>
 
     )
 }

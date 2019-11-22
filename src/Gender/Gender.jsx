@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom"
 
 function Gender() {
     return (
-        <div>
-            <h2 className="choose-gender">Choose your icon</h2>
+        <div className="gender-page">
+            <h2 className="choose-gender">Choose Your Icon</h2>
             <div className="icons">
 
                 <NavLink className="active" to={{
