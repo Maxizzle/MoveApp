@@ -8,7 +8,8 @@ Why the project is useful?
 Whether you're an amateur or a pro at working out "Move" has everything you need
 to get you motivated and focus on your workout goals. 
 
-![](name-of-giphy-2.gif)
+![](giphy-2.gif)
+
 
 I decide to create a workout ap because exercising has always been part of my life
 and now more than ever with easy acces to materials that we can easily sit and binge watch 
@@ -19,4 +20,4 @@ From quick 15 min workoouts to hour long sessions at the gym, no matter your lif
 
  
  
- Move was created by Jeanmax Deslouches and developped using React.Js a framework library created by Facebook.
+ Move was created by Jeanmax Deslouches and developped using React.Js, a framework library created by Facebook.
