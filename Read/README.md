@@ -16,7 +16,7 @@ and now more than ever with easy acces to materials that we can easily sit and b
 for hours , I believe it is crucial to get out there and move a little.
 Just like you can pull your phone out and watch you favorite show you can now do the same to find motivation and 
 the tools you need to get you moving in no time.
-From quick 15 min workoouts to hour long sessions at the gym, no matter your lifestyle you can always find time to "Move"
+From quick 15 min workoouts to hour long sessions at the gym, no matter your lifestyle you can alwa`ys find time to "Move"
 
  
  
