@@ -11,7 +11,7 @@ const Quote = () => {
                     old without seeing the beauty
                     and strength of which his body
                     is capable.” <br/> <br />
-                                     “Socrates”</h3>
+                                     Socrates</h3>
 
             </div>
             <footer>

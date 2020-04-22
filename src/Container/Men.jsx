@@ -1,11 +1,5 @@
 import React from "react"
 import { NavLink, Link } from "react-router-dom"
-import Legs from "../components/Legs"
-import Chest from "../components/Chest"
-import Back from "../components/Back"
-import Arms from "../components/Arms"
-import Core from "../components/Core"
-import Cardio from "../components/Cardio"
 import { getWorkouts } from "../api"
 import muscles from '../Images/muscles.png'
 import gynecomastia from '../Images/gynecomastia.png'
